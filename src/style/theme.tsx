@@ -181,13 +181,17 @@ export const getTagColor = type => {
   type = type.toLowerCase()
   if (type === "rails" || type === "ruby") {
     return "red";
-  } else if (type === "react") {
+  } else if (type === "react" || type === "react native") {
     return "cyan";
-  } else if (type === "javascript") {
+  } else if (type === "javascript" || type === "express") {
     return "yellow";
   } else if (type === "typescript" || type === "tailwindcss") {
     return "blue";
-  } else if (type === "chakraui" || type === "css") {
+  } else if (type === "node.js") {
     return "teal";
+  } else if (type === "mongodb") {
+    return "green";
+  } else if (type === "redux" || type === "bootstrap" || type === "heroku") {
+    return "purple";
   }
 };

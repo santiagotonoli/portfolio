@@ -1,52 +1,69 @@
-import peterpitch from "assets/images/projects/pp.png";
-import notch from "assets/images/projects/notch.png";
-import workof from "assets/images/projects/workof.png";
+import portfolio from "assets/images/projects/portfolio.png";
+import finded from "assets/images/projects/Finded.png";
+import mymovies from "assets/images/projects/mymovies.png";
+import morningnews from "assets/images/projects/morningnews.png";
 import souq from "assets/images/projects/souq.png";
-import gosave from "assets/images/projects/gosave.png";
-
-import MyMovies1 from "assets/images/projects/Mymovies1.png";
-import MyMovies2 from "assets/images/projects/Mymovies2.png";
 
 export const projectsList = [
   {
-    id: 1,
-    title: "My Portfolio",
-    logo: gosave,
-    blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
-    link: "https://gosavehq.com/",
-    desc: ["Portfolio website built with React and Typescript based on a Github open source project."],
-    technologies: ["javascript", "React", "Typescript"]
-  },
-  {
     id: 2,
     title: "Finded",
-    logo: peterpitch,
+    logo: finded,
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
-    link: "https://peterpitch.com/",
-    desc: ["This is a project management website for design and procurement teams It helps to collaborate and manage all of your floor plans in one place, writing specs, budgeting and timelines. This project management website provides a wide variety of features like timeline tracking, spec sheet generation, integrated budget, vendor + inventory management, user usage tracking and many more",
+    link: "https://github.com/BeniDiegoDev/finded",
+    desc: ["This is a mobile app created from scratch that i created with two other students for our final batch project. The app has been build within 2 weeks. Our app aims to make life easier for consumers on a daily basis by offering them a range of services at their fingertips.",
     "Achievements:",
-    "Create a graphical interface with JSX.",
-    "Use the React Stap library.",
+    "Create a graphical interface with Figma",
+    "Work on agile methode with Sprints",
     "Slice an application into React components.",
-    "Implement modules in ES6.",
-    "Master the concepts of ownership and state of a React component.",
+    "Use diffents types of libraries",
+    "Master the concepts of state of a React component.",
     "Mastering event management in React.",
     "Send information back between React components (Reverse Data Flow.)",
-    "Set up your own API via a Backend.",
-    "Master the life cycle of a React component.",
-    "Make React communicate with a Backend using Ajax"],
+    "Set up our own Backend connected to a Database.",
+    "Present the app in front of 50 persons"],
     technologies: ["JavaScript", "React Native", "MongoDB", "Redux", "Node.js", "Express", "Github", "Heroku"],
+  },
+  {
+    id: 1,
+    title: "My Portfolio",
+    logo: portfolio,
+    blurHash: "L09sWSxdH;s?%6axWAfk00V?%jax",
+    link: "https://gosavehq.com/",
+    desc: ["Portfolio website built with React and Typescript based on a Github open source project.",
+    "Achievements:",
+    "Learn from open source project",
+    "Learn TypeScript",
+    "Work on a different type of code structure",
+    "Adapt my code"],
+    technologies: ["JavaScript", "React", "Typescript"]
+  },
+ 
+  {
+    id: 4,
+    title: "Morning News",
+    logo: morningnews,
+    blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
+    link: "https://workof.com/",
+    desc: ["Morning News is a web application that will allow you to display recent news by source of information with the possibility of creating a wishlist to read them later.",
+    "Achievements:",
+    "Set up a navigation with the roads system in React.",
+    "Manipulate input fields in React.",
+    "Set up a Sign in/Sign up identification system.",
+    "Use Redux to facilitate data exchange.",
+    "Set up secure identification.",
+    "Use arrow functions."],
+    technologies: ["JavaScript", "React", "MongoDB", "Redux", "Node.js", "Express"]
   },
   {
     id: 3,
     title: "My Movies",
-    link: "https://www.hellonotch.com/",
-    logo: notch,
+    link: "https://github.com/santiagotonoli/mymovies",
+    logo: mymovies,
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
-    desc: ["This is a project management website for design and procurement teams It helps to collaborate and manage all of your floor plans in one place, writing specs, budgeting and timelines. This project management website provides a wide variety of features like timeline tracking, spec sheet generation, integrated budget, vendor + inventory management, user usage tracking and many more",
-    "",
-    " ",
+    desc: ["MyMoviz is a site that will allow you to display the most popular films with the possibility of creating a wishlist, placing a view counter and giving an evaluation of each of the films presented. The particularity of this app is that it is developed in React!",
     "Achievements:",
+    "• Learned coding in React",
     "• Create a graphical interface with JSX.",
     "• Use the React Stap library.",
     "• Slice an application into React components.",
@@ -56,29 +73,8 @@ export const projectsList = [
     "• Send information back between React components (Reverse Data Flow.)",
     "• Set up your own API via a Backend.",
     "• Master the life cycle of a React component.",
-    "• Make React communicate with a Backend using Ajax",MyMovies1,MyMovies2],
-    technologies: ["javascript", "React", "MongoDB", "Redux", "Node.js", "Express"],
-    images: [MyMovies1, MyMovies2]
-  },
-  {
-    id: 4,
-    title: "Morning News",
-    logo: workof,
-    blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
-    link: "https://workof.com/",
-    desc: ["This is a project management website for design and procurement teams It helps to collaborate and manage all of your floor plans in one place, writing specs, budgeting and timelines. This project management website provides a wide variety of features like timeline tracking, spec sheet generation, integrated budget, vendor + inventory management, user usage tracking and many more",
-    "Achievements:",
-    "Create a graphical interface with JSX.",
-    "Use the React Stap library.",
-    "Slice an application into React components.",
-    "Implement modules in ES6.",
-    "Master the concepts of ownership and state of a React component.",
-    "Mastering event management in React.",
-    "Send information back between React components (Reverse Data Flow.)",
-    "Set up your own API via a Backend.",
-    "Master the life cycle of a React component.",
-    "Make React communicate with a Backend using Ajax"],
-    technologies: ["javascript", "React", "MongoDB", "Redux", "Node.js", "Express"]
+    "• Make React communicate with a Backend using Ajax"],
+    technologies: ["JavaScript", "React", "MongoDB", "Redux", "Node.js", "Express"],
   },
   {
     id: 5,
@@ -86,18 +82,19 @@ export const projectsList = [
     logo: souq,
     blurHash: "L1O^uE0679I00AGT?.H{00y7p2tK",
     link: "https://www.souqofqatar.com/",
-    desc: ["This is a project management website for design and procurement teams It helps to collaborate and manage all of your floor plans in one place, writing specs, budgeting and timelines. This project management website provides a wide variety of features like timeline tracking, spec sheet generation, integrated budget, vendor + inventory management, user usage tracking and many more",
+    desc: ["Weather App is a Website that will allow you to display the weather forecast for cities that you have previously entered.",
     "Achievements:",
-    "Create a graphical interface with JSX.",
-    "Use the React Stap library.",
-    "Slice an application into React components.",
-    "Implement modules in ES6.",
-    "Master the concepts of ownership and state of a React component.",
-    "Mastering event management in React.",
-    "Send information back between React components (Reverse Data Flow.)",
-    "Set up your own API via a Backend.",
-    "Master the life cycle of a React component.",
-    "Make React communicate with a Backend using Ajax"],
-    technologies: ["javascript", "Boostrap", "Node.js", "Express"]
+    "My first JavaScript Website",
+    "The Bootstrap library",
+    "The Bootstrap Grid",
+    "Read and understand technical documentation",
+    "Backend installation",
+    "The organization of the Express framework",
+    "The road concept",
+    "The notion of .ejs files",
+    "Make an .ejs file dynamic",
+    "Http requests",
+    "The exchange of information between the Backend and the Frontend"],
+    technologies: ["JavaScript", "Bootstrap", "Node.js", "Express"]
   }
 ];

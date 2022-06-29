@@ -1,9 +1,5 @@
 import * as React from "react";
 import {
-  FiPackage,
-  FiHome,
-  FiEdit2,
-  FiUsers,
   FiBarChart2,
   FiGlobe,
 } from "react-icons/fi";
@@ -11,43 +7,13 @@ import {
   FaGraduationCap,
   FaMobile
 } from "react-icons/fa";
-import { VStack, Heading, Box, Link, LinkProps } from "@chakra-ui/react";
+import { VStack, Heading, Box} from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
-import { Link as NavLink } from "react-router-dom";
 import Header from "./header";
 
-interface ExternalLinkProps extends LinkProps {
-  url: string;
-  linkProps?: LinkProps;
-  text: string;
-}
 
-const ExternalLink: React.FC<ExternalLinkProps> = ({
-  url,
-  linkProps,
-  text,
-  ...props
-}) => {
-  return (
-    <Link href={url} {...linkProps} {...props}>
-      {text}
-    </Link>
-  );
-};
 
-const InternalLink: React.FC<ExternalLinkProps> = ({
-  url,
-  linkProps,
-  text,
-  ...props
-}) => {
-  return (
-    <Link as={NavLink} to={url} {...linkProps} {...props}>
-      {text}
-    </Link>
-  );
-};
 const Achievements = () => {
   return (
     <PageSlideFade>

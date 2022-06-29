@@ -11,7 +11,6 @@ import {
   PopoverContent,
   PopoverBody
 } from "@chakra-ui/react";
-import { FiCheckCircle } from "react-icons/fi";
 
 export interface StoryTimelineProps extends BoxProps {
   icon?: any;

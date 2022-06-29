@@ -1,10 +1,7 @@
 import React from "react";
 import {
   FaGithub,
-  FaDev,
-  FaLinkedin,
-  FaQuora,
-  FaTwitter
+  FaLinkedin
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
@@ -26,7 +23,7 @@ const siteConfig = {
         icon: <FaLinkedin />
       },
       {
-        url: "mailto:stonolidm@gmail.com",
+        url: "mailto:santiagotonoli@hotmail.fr",
         label: "Mail santiago",
         type: "gray",
         icon: <FiMail />

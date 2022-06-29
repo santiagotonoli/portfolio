@@ -6,9 +6,8 @@ import {
   useColorModeValue,
   Tag,
   Link,
-  Box,
-  Image
 } from "@chakra-ui/react";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { getTagColor } from "style/theme";
 import LazyImage from "./lazy-image";
@@ -20,7 +19,6 @@ interface ProjectCardProps {
   blurHash: string;
   link: string;
   technologies: string[];
-  images: string[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -30,11 +28,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   blurHash,
   link,
   technologies,
-  images
 }) => {
   const textColor = useColorModeValue("gray.500", "gray.200");
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
+
 
   return (
     <motion.div layout onClick={toggleOpen}>
@@ -61,29 +59,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           layout="fixed"
           rounded="md"
         />
-        <VStack align="start" justify="flex-start">
+        <VStack align="start">
           <VStack spacing={0} align="start">
             <motion.div layout>
-              <HStack>
-                <Text
-                  as={Link}
-                  href={link}
-                  fontWeight="bold"
-                  fontSize="md"
-                  noOfLines={1}
-                  onClick={e => e.stopPropagation()}
-                  isExternal
-                >
-                  {title}
-                </Text>
-                <HStack spacing="1">
-                  {technologies.map(tech => (
-                    <Tag size="sm" colorScheme={getTagColor(tech)}>
-                      {tech}
-                    </Tag>
-                  ))}
-                </HStack>
+              <HStack wrap="wrap">
+                  <Text
+                    as={Link}
+                    href={link}
+                    fontWeight="bold"
+                    fontSize="md"
+                    onClick={e => e.stopPropagation()}
+                    isExternal
+                  >
+                    {title}
+                  </Text>
+                  <HStack wrap="wrap" spacing={1}>
+                    {technologies.map(tech => (
+                      <Tag size="sm" colorScheme={getTagColor(tech)}>
+                        {tech}
+                      </Tag>
+                    ))}
+                  </HStack>
+                
               </HStack>
+              
             </motion.div>
             <AnimatePresence>
               <motion.div
@@ -95,7 +94,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 {!isOpen && (
                   
                   <Text fontSize="sm" color={textColor} noOfLines={{ base: 2 }}>
-                    {description[0]}
+                    {description[0]} ...
                   </Text>
                 )}
               </motion.div>

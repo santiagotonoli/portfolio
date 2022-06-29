@@ -17,8 +17,7 @@ import css3 from "assets/images/skills/css3.png";
 import bootstrap from "assets/images/skills/bootstrap.png";
 import heroku from "assets/images/skills/heroku.png";
 import docean from "assets/images/skills/digital-ocean.png";
-import { BiCapsule } from "react-icons/bi";
-import { FaGraduationCap, FaAward, FaMedal } from "react-icons/fa";
+import { FaGraduationCap, FaAward} from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 
 
