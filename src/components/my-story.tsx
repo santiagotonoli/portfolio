@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { StoryTimeline } from "./story-timeline";
 import placeholder from "assets/images/placeholder.png";
+import { story } from "data/data";
 import Header from "./header";
 import Section from "./section";
 import { PageSlideFade } from "./page-transitions";
