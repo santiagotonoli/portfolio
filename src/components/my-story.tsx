@@ -17,21 +17,6 @@ import { PageSlideFade } from "./page-transitions";
 
 const MyStory = () => {
 
-  const [isMobile, setIsMobile] = React.useState(false)
- 
-  //choose the screen size 
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
-        setIsMobile(true)
-    } else {
-        setIsMobile(false)
-    }
-  }
-
-  // create an event listener
-  React.useEffect(() => {
-    window.addEventListener("resize", handleResize)
-  })
 
   return (
 
@@ -51,7 +36,7 @@ const MyStory = () => {
           {story.map((institutes, index) => (
             
             <StoryTimeline
-            
+
               icon={institutes.icon}
               index={index}
             >
