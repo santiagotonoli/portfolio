@@ -36,8 +36,8 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
   let place = index % 2 === 0 ? "right" : "left";
 
   return (
-    <Flex minH={20} {...props}>
-      <Flex flexDir="column" alignItems={["start","center"]} minHeight={"10rem"} mr={4}>
+    <Flex minH={20} {...props} minW={[200,0]}>
+      <Flex flexDir="column" alignItems={"center"} minHeight={["20rem","10rem"]} mr={4}>
         <Popover
           //returnFocusOnClose={false}
           isOpen={isOpen}
@@ -45,7 +45,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
           placement={place}
           closeOnBlur={false}
           // variant="responsive"
-          width={["9.3rem", "12.3rem", "15rem", "100%"]}
+          width={["9.3rem", "11.3rem", "15rem", "100%"]}
         >
           <PopoverTrigger>
             <Box onClick={open} position="relative">

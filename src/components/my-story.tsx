@@ -17,27 +17,43 @@ import { PageSlideFade } from "./page-transitions";
 
 const MyStory = () => {
 
+  const [isMobile, setIsMobile] = React.useState(false)
+ 
+  //choose the screen size 
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setIsMobile(true)
+    } else {
+        setIsMobile(false)
+    }
+  }
 
+  // create an event listener
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
 
   return (
+
+    
     <VStack>
       <Section mb={100}>
         <PageSlideFade>
-          <VStack>
+          <VStack justify={"start"}>
             <Header mt={0} mb={1}>
               My developer journey
             </Header>
           </VStack>
         </PageSlideFade>
       </Section>
-      <VStack textAlign="start" align="flex-start" mb={0}>
+      <VStack textAlign="start" align="flex-start">
         <Box>
           {story.map((institutes, index) => (
             
             <StoryTimeline
+            
               icon={institutes.icon}
               index={index}
-              //mb={5}
             >
               {" "}
               <HStack>
