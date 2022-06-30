@@ -21,20 +21,12 @@ const MyStory = () => {
 
   return (
     <VStack>
-      <Section mb={14}>
+      <Section mb={100}>
         <PageSlideFade>
           <VStack>
             <Header mt={0} mb={1}>
               My developer journey
             </Header>
-            {/* <Text
-              fontSize={"xl"}
-              color={useColorModeValue("gray.500", "gray.200")}
-              maxW="lg"
-              textAlign="center"
-            >
-              This page tells you my story in timeline shape.
-            </Text> */}
           </VStack>
         </PageSlideFade>
       </Section>
@@ -45,6 +37,7 @@ const MyStory = () => {
             <StoryTimeline
               icon={institutes.icon}
               index={index}
+              //mb={5}
             >
               {" "}
               <HStack>

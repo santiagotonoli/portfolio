@@ -75,7 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   </Text>
                   <HStack wrap="wrap" spacing={1}>
                     {technologies.map(tech => (
-                      <Tag size="sm" colorScheme={getTagColor(tech)}>
+                      <Tag size="sm" colorScheme={getTagColor(tech)} mb={1}>
                         {tech}
                       </Tag>
                     ))}

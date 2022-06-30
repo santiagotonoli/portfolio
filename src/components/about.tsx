@@ -99,11 +99,12 @@ const Card = (props: CardProps) => {
           spacing={1}
           mt={3}
           isInline
+          flexWrap={"wrap"}
           alignItems="center"
           display={["flex", "flex", "none", "none"]}
         >
           {skills.map(skill => (
-            <Tag size="sm" padding="0 3px" key={skill}>
+            <Tag size="sm" padding="0 3px" mb={1}  key={skill}>
               {skill}
             </Tag>
           ))}

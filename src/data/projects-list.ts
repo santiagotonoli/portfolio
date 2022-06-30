@@ -22,7 +22,7 @@ export const projectsList = [
     "Send information back between React components (Reverse Data Flow.)",
     "Set up our own Backend connected to a Database.",
     "Present the app in front of 50 persons"],
-    technologies: ["JavaScript", "React Native", "MongoDB", "Redux", "Node.js", "Express", "Github", "Heroku"],
+    technologies: ["React Native", "MongoDB", "Redux", "Node.js", "Express", "Github", "Heroku"],
   },
   {
     id: 1,
@@ -36,7 +36,7 @@ export const projectsList = [
     "Learn TypeScript",
     "Work on a different type of code structure",
     "Adapt my code"],
-    technologies: ["JavaScript", "React", "Typescript"]
+    technologies: ["React", "Typescript"]
   },
  
   {
@@ -53,7 +53,7 @@ export const projectsList = [
     "Use Redux to facilitate data exchange.",
     "Set up secure identification.",
     "Use arrow functions."],
-    technologies: ["JavaScript", "React", "MongoDB", "Redux", "Node.js", "Express"]
+    technologies: ["React", "MongoDB", "Redux", "Node.js", "Express"]
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ export const projectsList = [
     "• Set up your own API via a Backend.",
     "• Master the life cycle of a React component.",
     "• Make React communicate with a Backend using Ajax"],
-    technologies: ["JavaScript", "React", "MongoDB", "Redux", "Node.js", "Express"],
+    technologies: ["React", "MongoDB", "Redux", "Node.js", "Express"],
   },
   {
     id: 5,
