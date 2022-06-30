@@ -61,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         />
         <VStack align="start">
           <VStack spacing={0} align="start">
-            <motion.div layout>
+            {/* <motion.div layout> */}
               <HStack wrap="wrap">
                   <Text
                     as={Link}
@@ -83,31 +83,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 
               </HStack>
               
-            </motion.div>
+            {/* </motion.div> */}
             <AnimatePresence>
-              <motion.div
+              {/* <motion.div
                 layout
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 1 }}
-              >
+              > */}
                 {!isOpen && (
                   
                   <Text fontSize="sm" color={textColor} noOfLines={{ base: 2 }}>
                     {description[0]} ...
                   </Text>
                 )}
-              </motion.div>
+              {/* </motion.div> */}
             </AnimatePresence>
 
             <AnimatePresence>
-              <motion.div
+              {/* <motion.div
                 layout
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-              >
+              > */}
                 {isOpen && 
 
                  description.map(desc => (
@@ -119,7 +119,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   </Text>
                 ))}
                 
-              </motion.div>
+              {/* </motion.div> */}
             </AnimatePresence>
           </VStack>
         </VStack>
