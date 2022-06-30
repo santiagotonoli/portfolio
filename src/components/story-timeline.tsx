@@ -9,7 +9,8 @@ import {
   PopoverTrigger,
   PopoverArrow,
   PopoverContent,
-  PopoverBody
+  PopoverBody,
+  PopoverCloseButton
 } from "@chakra-ui/react";
 
 export interface StoryTimelineProps extends BoxProps {
@@ -39,13 +40,14 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
     <Flex minH={20} {...props} minW={[200,0]}>
       <Flex flexDir="column" alignItems={"center"} minHeight={["20rem","10rem"]} mr={4}>
         <Popover
-          //returnFocusOnClose={false}
           isOpen={isOpen}
           onClose={close}
           placement={place}
           closeOnBlur={false}
-          // variant="responsive"
+          variant="responsive"
           width={["9.3rem", "11.3rem", "15rem", "100%"]}
+          arrowPadding={20}
+          autoFocus={false}
         >
           <PopoverTrigger>
             <Box onClick={open} position="relative">
@@ -82,7 +84,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
             {!year && (
               <PopoverContent padding={["0.2rem", "0.2rem", "0.7rem"]}>
                 <PopoverArrow />
-                {/* <PopoverCloseButton /> */}
+                <PopoverCloseButton />
                 <PopoverBody>
                   <Box overflow="scroll">{children}</Box>
                 </PopoverBody>

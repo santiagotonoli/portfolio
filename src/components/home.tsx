@@ -71,17 +71,17 @@ const Home = () => {
           <Header underlineColor={ORANGE} emoji="👋" mt={0} className="face">
             Hey!
           </Header>
-          <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
+          <Box as="h2" fontSize={["xl","2xl"]} fontWeight="400" textAlign="left" mr={[5,0]} ml={[5,0]} >
             My name is{" "}
-            <Box as="strong" fontWeight="600">
+            <Box as="strong" fontWeight="600" mr={[5,0]} ml={[5,0]}>
               Santiago
             </Box>{" "}
             and I&apos;m a{" "}
-            <Box as="span" whiteSpace="nowrap">
+            <Box as="span" whiteSpace="nowrap" mr={[5,0]} ml={[5,0]}>
               Full Stack Developer from France 🇫🇷
             </Box>{" "}
           </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+          <Box as="h2" fontSize={["xl","2xl"]} fontWeight="400" mt={5} textAlign="left" mr={[5,0]} ml={[5,0]}>
             This is my digital garden, where I write about the things I'm
             working on and share what I've learned. 😊
           </Box>
