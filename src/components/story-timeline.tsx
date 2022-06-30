@@ -10,7 +10,6 @@ import {
   PopoverArrow,
   PopoverContent,
   PopoverBody,
-  PopoverCloseButton
 } from "@chakra-ui/react";
 
 export interface StoryTimelineProps extends BoxProps {
@@ -84,7 +83,6 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
             {!year && (
               <PopoverContent padding={["0.2rem", "0.2rem", "0.7rem"]}>
                 <PopoverArrow />
-                <PopoverCloseButton />
                 <PopoverBody>
                   <Box overflow="scroll">{children}</Box>
                 </PopoverBody>
