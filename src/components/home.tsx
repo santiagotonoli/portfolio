@@ -68,16 +68,16 @@ const Home = () => {
             }
           }}
         >
-          <Header underlineColor={ORANGE} emoji="👋" mt={0} className="face">
+          <Header underlineColor={ORANGE} emoji="👋" mt={0} className="face" ml={[5,0]}>
             Hey!
           </Header>
           <Box as="h2" fontSize={["xl","2xl"]} fontWeight="400" textAlign="left" mr={[5,0]} ml={[5,0]} >
             My name is{" "}
-            <Box as="strong" fontWeight="600" mr={[5,0]} ml={[5,0]}>
+            <Box as="strong" fontWeight="600">
               Santiago
             </Box>{" "}
             and I&apos;m a{" "}
-            <Box as="span" whiteSpace="nowrap" mr={[5,0]} ml={[5,0]}>
+            <Box as="span" whiteSpace="nowrap">
               Full Stack Developer from France 🇫🇷
             </Box>{" "}
           </Box>
