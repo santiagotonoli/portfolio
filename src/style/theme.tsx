@@ -193,5 +193,7 @@ export const getTagColor = type => {
     return "green";
   } else if (type === "redux" || type === "bootstrap" || type === "heroku") {
     return "purple";
+  } else if (type === "solidity") {
+    return "blackAlpha";
   }
 };

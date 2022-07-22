@@ -1,3 +1,5 @@
+import solidity from "assets/images/skills/solidity.svg";
+import freecodecamp from "assets/images/logos/freecodecamp.png";
 import SfrLogo from "assets/images/logos/sfr.svg.png";
 import onWave from "assets/images/logos/onWave.png";
 import Dauphine from "assets/images/logos/Dauphine.jpeg";
@@ -17,7 +19,7 @@ import css3 from "assets/images/skills/css3.png";
 import bootstrap from "assets/images/skills/bootstrap.png";
 import heroku from "assets/images/skills/heroku.png";
 import docean from "assets/images/skills/digital-ocean.png";
-import { FaGraduationCap, FaAward} from "react-icons/fa";
+import { FaGraduationCap, FaAward } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 
 
@@ -120,13 +122,13 @@ export const story = [
     title: "Start-up Challenge",
     type: "award",
     role:
-          "Won the 2nd price in the Start-up Challenge of the Dauphine University with the project 'DeepClimb App - AI for Climbing'",
+      "Won the 2nd price in the Start-up Challenge of the Dauphine University with the project 'DeepClimb App - AI for Climbing'",
     skills: ["VBA", "Tableau Software", "Management", "Intern Softwares"],
     period: "February 2020",
     logo: Dauphine,
     icon: FaAward
   },
-  
+
   {
     title: "onWave",
     type: "company",
@@ -160,10 +162,41 @@ export const story = [
     startingYear: "2022",
     logo: Capsule,
     icon: FaAward
+  },
+  {
+    short_title: "Solidity Learning",
+    type: "school",
+    title: "FreeCodeCamp - Solidity Learning",
+    alt: "freecodecamp image",
+    role: "Started learning solidity with an 32hours online course made by Patrick Collins",
+    skills: ["Solidty", "JavaScript", "Node.js", "Git", "Github"],
+    period: "July 2022",
+    startingYear: "2022",
+    logo: freecodecamp,
+    icon: FaGraduationCap
+  },
+  {
+    short_title: "Solidity Learning",
+    type: "school",
+    title: "FreeCodeCamp - Solidity Learning",
+    alt: "freecodecamp image",
+    role: "Deployed my first smart contract on an Ethereum testnet",
+    skills: ["Solidty", "JavaScript", "Node.js", "Git", "Github"],
+    period: "July 2022",
+    startingYear: "2022",
+    logo: freecodecamp,
+    icon: FaAward
   }
 ];
 
 export const skills = [
+  {
+    name: "Solidity",
+    description: "Web3 development",
+    link: "https://docs.soliditylang.org/en/v0.8.15/",
+    type: "development",
+    image: solidity
+  },
   {
     name: "JavaScript",
     description: "Web development",
