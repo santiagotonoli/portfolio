@@ -4,12 +4,14 @@ import mymovies from "assets/images/projects/mymovies.png";
 import morningnews from "assets/images/projects/morningnews.png";
 import souq from "assets/images/projects/souq.png";
 import solidity from "assets/images/skills/solidity.svg";
+import fundme from "assets/images/projects/fundme.png";
+
 
 export const projectsList = [
   {
     id: 2,
     title: "Fullstack FundMe",
-    logo: solidity,
+    logo: fundme,
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
     link: "https://github.com/santiagotonoli/Fullstack-FundMe",
     desc: ["React Web interface to interact with the FundMe smart contract",

@@ -79,7 +79,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiTwotoneThunderbolt} weight="fill" />
+                  <Icon as={AiTwotoneThunderbolt} />
                   <Text>All</Text>
                 </HStack>
               </Tab>
@@ -111,7 +111,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("development")}
               >
                 <HStack spacing={1}>
-                  <Icon as={BiDesktop} weight="fill" />
+                  <Icon as={BiDesktop} />
                   <Text>Web Development</Text>
                 </HStack>
               </Tab>
@@ -127,7 +127,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("design")}
               >
                 <HStack spacing={1}>
-                  <Icon as={GiSpiderWeb} weight="fill" />
+                  <Icon as={GiSpiderWeb} />
                   <Text>Web Design</Text>
                 </HStack>
               </Tab>
@@ -143,7 +143,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("devops")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiOutlineCloudServer} weight="fill" />
+                  <Icon as={AiOutlineCloudServer} />
                   <Text>Devops</Text>
                 </HStack>
               </Tab>
@@ -156,6 +156,26 @@ const TechStack = () => {
                   animate="visible"
                 >
                   <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+                    {skillsList.map((tool, index) => (
+                      <SkillCard
+                        key={index}
+                        name={tool.name}
+                        description={tool.description}
+                        image={tool.image}
+                        platform={"web"}
+                        link={tool.link}
+                      />
+                    ))}
+                  </SimpleGrid>
+                </MotionBox>
+              </TabPanel>
+              <TabPanel px={0}>
+                <MotionBox
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
                     {skillsList.map((tool, index) => (
                       <SkillCard
                         key={index}

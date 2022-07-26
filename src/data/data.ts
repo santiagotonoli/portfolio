@@ -196,21 +196,21 @@ export const skills = [
 
   {
     name: "Netlify",
-    description: "Devops",
+    description: "Web hosting",
     link: "https://www.netlify.com/",
     type: "devops",
     image: netlify
   },
   {
     name: "Ether Js",
-    description: "Web3 development",
+    description: "Web3 library",
     link: "https://docs.ethers.io/v5/",
     type: "web3",
     image: etherjs
   },
   {
     name: "Hardhat",
-    description: "Web3 development",
+    description: "Ethereum environment",
     link: "https://hardhat.org/",
     type: "web3",
     image: hardhat
