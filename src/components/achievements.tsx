@@ -5,9 +5,10 @@ import {
 } from "react-icons/fi";
 import {
   FaGraduationCap,
-  FaMobile
+  FaMobile,
+  FaEthereum
 } from "react-icons/fa";
-import { VStack, Heading, Box} from "@chakra-ui/react";
+import { VStack, Heading, Box } from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
 import Header from "./header";
@@ -28,17 +29,18 @@ const Achievements = () => {
             2022
           </Heading>
           <Box>
+            <TimelineItem icon={FaEthereum}>Deployed my first solidity smart contract</TimelineItem>
             <TimelineItem icon={FiGlobe}>Created my portfolio website based on an github open source project</TimelineItem>
             <TimelineItem icon={FaGraduationCap}>
               Graduated from La Capsule 🚀 {" "}
             </TimelineItem>
             <TimelineItem icon={FaMobile}>
-            Developed my first React native App{" "}
+              Developed my first React native App{" "}
             </TimelineItem>
             <TimelineItem icon={FiBarChart2} >
               Learned how to code in JavaScript{" "}
             </TimelineItem>
-            
+
           </Box>
         </Box>
         <Box>

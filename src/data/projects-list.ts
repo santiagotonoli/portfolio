@@ -8,6 +8,18 @@ import solidity from "assets/images/skills/solidity.svg";
 export const projectsList = [
   {
     id: 2,
+    title: "Fullstack FundMe",
+    logo: solidity,
+    blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",
+    link: "https://github.com/santiagotonoli/Fullstack-FundMe",
+    desc: ["React Web interface to interact with the FundMe smart contract",
+      "Achievements:",
+      "• Learn how to interact with a smart contract",
+      "• Connecting Metamask"],
+    technologies: ["React", "Solidity", "Github"],
+  },
+  {
+    id: 2,
     title: "FundMe - Solidity",
     logo: solidity,
     blurHash: "L4ADc400P*Zi4Tu1y;Qo00pH#YXl",

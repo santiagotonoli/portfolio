@@ -13,6 +13,9 @@ import {
   useColorModeValue,
   SimpleGrid
 } from "@chakra-ui/react";
+import {
+  FaEthereum
+} from "react-icons/fa";
 import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
@@ -78,6 +81,22 @@ const TechStack = () => {
                 <HStack spacing={1}>
                   <Icon as={AiTwotoneThunderbolt} weight="fill" />
                   <Text>All</Text>
+                </HStack>
+              </Tab>
+              <Tab
+                bg={useColorModeValue("gray.100", "gray.800")}
+                color={useColorModeValue("gray.500", "gray.500")}
+                _selected={{
+                  color: useColorModeValue("gray.100", "gray.800"),
+                  bg: useColorModeValue("gray.900", "gray.100")
+                }}
+                mr={2}
+                mt={2}
+                onClick={() => filterSkills("web3")}
+              >
+                <HStack spacing={1}>
+                  <Icon as={FaEthereum} />
+                  <Text>Web3</Text>
                 </HStack>
               </Tab>
               <Tab

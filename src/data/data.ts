@@ -1,4 +1,7 @@
+import netlify from "assets/images/skills/netlify.png";
+import etherjs from "assets/images/skills/etherjs.png";
 import solidity from "assets/images/skills/solidity.svg";
+import hardhat from "assets/images/skills/hardhat.jpeg";
 import freecodecamp from "assets/images/logos/freecodecamp.png";
 import SfrLogo from "assets/images/logos/sfr.svg.png";
 import onWave from "assets/images/logos/onWave.png";
@@ -190,11 +193,33 @@ export const story = [
 ];
 
 export const skills = [
+
+  {
+    name: "Netlify",
+    description: "Devops",
+    link: "https://www.netlify.com/",
+    type: "devops",
+    image: netlify
+  },
+  {
+    name: "Ether Js",
+    description: "Web3 development",
+    link: "https://docs.ethers.io/v5/",
+    type: "web3",
+    image: etherjs
+  },
+  {
+    name: "Hardhat",
+    description: "Web3 development",
+    link: "https://hardhat.org/",
+    type: "web3",
+    image: hardhat
+  },
   {
     name: "Solidity",
     description: "Web3 development",
     link: "https://docs.soliditylang.org/en/v0.8.15/",
-    type: "development",
+    type: "web3",
     image: solidity
   },
   {
